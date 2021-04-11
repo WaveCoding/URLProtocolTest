@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		250C3DD526234497005D21BB /* URLProtocolTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250C3DCB26234497005D21BB /* URLProtocolTest.framework */; };
-		250C3DDA26234497005D21BB /* URLProtocolTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250C3DD926234497005D21BB /* URLProtocolTestTests.swift */; };
-		250C3DDC26234497005D21BB /* URLProtocolTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 250C3DCE26234497005D21BB /* URLProtocolTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		250C3DDA26234497005D21BB /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250C3DD926234497005D21BB /* URLSessionHTTPClientTests.swift */; };
+		250C3DEC262345BA005D21BB /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250C3DEB262345BA005D21BB /* HTTPClient.swift */; };
+		250C3DF02623460A005D21BB /* CarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250C3DEF2623460A005D21BB /* CarItem.swift */; };
+		250C3DF626234AE7005D21BB /* TaxiLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250C3DF526234AE7005D21BB /* TaxiLoader.swift */; };
+		250C3DFA26234B5D005D21BB /* RemoteTaxiLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250C3DF926234B5D005D21BB /* RemoteTaxiLoader.swift */; };
+		250C3DFE26234BB2005D21BB /* CarItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250C3DFD26234BB2005D21BB /* CarItemsMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +28,15 @@
 
 /* Begin PBXFileReference section */
 		250C3DCB26234497005D21BB /* URLProtocolTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLProtocolTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		250C3DCE26234497005D21BB /* URLProtocolTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLProtocolTest.h; sourceTree = "<group>"; };
 		250C3DCF26234497005D21BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		250C3DD426234497005D21BB /* URLProtocolTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLProtocolTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		250C3DD926234497005D21BB /* URLProtocolTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolTestTests.swift; sourceTree = "<group>"; };
+		250C3DD926234497005D21BB /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		250C3DDB26234497005D21BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		250C3DEB262345BA005D21BB /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		250C3DEF2623460A005D21BB /* CarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarItem.swift; sourceTree = "<group>"; };
+		250C3DF526234AE7005D21BB /* TaxiLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiLoader.swift; sourceTree = "<group>"; };
+		250C3DF926234B5D005D21BB /* RemoteTaxiLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTaxiLoader.swift; sourceTree = "<group>"; };
+		250C3DFD26234BB2005D21BB /* CarItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarItemsMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +79,8 @@
 		250C3DCD26234497005D21BB /* URLProtocolTest */ = {
 			isa = PBXGroup;
 			children = (
-				250C3DCE26234497005D21BB /* URLProtocolTest.h */,
+				250C3DE92623458D005D21BB /* Taxi API */,
+				250C3DEA262345A0005D21BB /* Taxi Feature */,
 				250C3DCF26234497005D21BB /* Info.plist */,
 			);
 			path = URLProtocolTest;
@@ -80,10 +89,29 @@
 		250C3DD826234497005D21BB /* URLProtocolTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				250C3DD926234497005D21BB /* URLProtocolTestTests.swift */,
+				250C3DD926234497005D21BB /* URLSessionHTTPClientTests.swift */,
 				250C3DDB26234497005D21BB /* Info.plist */,
 			);
 			path = URLProtocolTestTests;
+			sourceTree = "<group>";
+		};
+		250C3DE92623458D005D21BB /* Taxi API */ = {
+			isa = PBXGroup;
+			children = (
+				250C3DEB262345BA005D21BB /* HTTPClient.swift */,
+				250C3DF926234B5D005D21BB /* RemoteTaxiLoader.swift */,
+				250C3DFD26234BB2005D21BB /* CarItemsMapper.swift */,
+			);
+			path = "Taxi API";
+			sourceTree = "<group>";
+		};
+		250C3DEA262345A0005D21BB /* Taxi Feature */ = {
+			isa = PBXGroup;
+			children = (
+				250C3DEF2623460A005D21BB /* CarItem.swift */,
+				250C3DF526234AE7005D21BB /* TaxiLoader.swift */,
+			);
+			path = "Taxi Feature";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +121,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				250C3DDC26234497005D21BB /* URLProtocolTest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +174,7 @@
 				TargetAttributes = {
 					250C3DCA26234497005D21BB = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					250C3DD326234497005D21BB = {
 						CreatedOnToolsVersion = 12.4;
@@ -194,6 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250C3DFE26234BB2005D21BB /* CarItemsMapper.swift in Sources */,
+				250C3DF02623460A005D21BB /* CarItem.swift in Sources */,
+				250C3DF626234AE7005D21BB /* TaxiLoader.swift in Sources */,
+				250C3DFA26234B5D005D21BB /* RemoteTaxiLoader.swift in Sources */,
+				250C3DEC262345BA005D21BB /* HTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				250C3DDA26234497005D21BB /* URLProtocolTestTests.swift in Sources */,
+				250C3DDA26234497005D21BB /* URLSessionHTTPClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +373,7 @@
 		250C3DE026234497005D21BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -356,6 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.wavecoding.URLProtocolTest;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -363,6 +398,7 @@
 		250C3DE126234497005D21BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -386,6 +422,7 @@
 		250C3DE326234497005D21BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = URLProtocolTestTests/Info.plist;
@@ -403,6 +440,7 @@
 		250C3DE426234497005D21BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = URLProtocolTestTests/Info.plist;
