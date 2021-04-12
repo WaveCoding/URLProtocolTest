@@ -14,6 +14,7 @@
 		250C3DF626234AE7005D21BB /* TaxiLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250C3DF526234AE7005D21BB /* TaxiLoader.swift */; };
 		250C3DFA26234B5D005D21BB /* RemoteTaxiLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250C3DF926234B5D005D21BB /* RemoteTaxiLoader.swift */; };
 		250C3DFE26234BB2005D21BB /* CarItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250C3DFD26234BB2005D21BB /* CarItemsMapper.swift */; };
+		250C3E0626243D81005D21BB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 250C3E0526243D81005D21BB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		250C3DF526234AE7005D21BB /* TaxiLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiLoader.swift; sourceTree = "<group>"; };
 		250C3DF926234B5D005D21BB /* RemoteTaxiLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTaxiLoader.swift; sourceTree = "<group>"; };
 		250C3DFD26234BB2005D21BB /* CarItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarItemsMapper.swift; sourceTree = "<group>"; };
+		250C3E0526243D81005D21BB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		250C3DC126234497005D21BB = {
 			isa = PBXGroup;
 			children = (
+				250C3E0526243D81005D21BB /* README.md */,
 				250C3DCD26234497005D21BB /* URLProtocolTest */,
 				250C3DD826234497005D21BB /* URLProtocolTestTests */,
 				250C3DCC26234497005D21BB /* Products */,
@@ -205,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250C3E0626243D81005D21BB /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
